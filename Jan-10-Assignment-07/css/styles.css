@@ -1,0 +1,267 @@
+/*
+
+  Reference:
+  https://demo.templatemonster.com/demo/49529.html?_gl=1*z6arwt*_ga*NjI0OTQ4NzkxLjE3MDQ5MDU0NjE.*_ga_FTPYEGT5LY*MTcwNDkwNTQ2MC4xLjEuMTcwNDkwNTQ2Mi41OC4wLjA.
+
+*/
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1 {
+  color: #29417c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a9b3bf;
+  color: white;
+}
+
+.header-left img{
+  margin: 30px;
+  width: 140px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header-left ul {
+  display: flex;
+  list-style-type:none;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media screen and (max-width:800px) {
+  .header-left ul {
+    display: none;
+  }
+}
+
+.header-left ul li{
+  padding: 5px;
+  text-align: center;
+  width: 90px;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 0;
+}
+
+.header-right img {
+  display: none;
+}
+
+@media screen and (max-width:800px){
+  .header-right button{
+    display: none;
+  }
+
+  /* fake hamburger */
+  .header-right img {
+    width: 50px;
+    display:inline;
+    margin: 20px;
+  }
+}
+
+.button-sign-in {
+  border: 2px solid white;
+  color: white;
+  border-radius: 15px;
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px 20px;
+  background-color: transparent;
+  width: 100px;
+}
+
+.button-white {
+  border: none;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  height: 50px;
+  margin: 20px 10px 20px 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+.button-blue {
+  border: none;
+  color: white;
+  background-color: #3276eb;
+  border-radius: 30px;
+  height: 50px;
+  margin: 20px 10px 20px 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+.hero {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #a9b3bf;
+  /* border: 1px solid red; */
+}
+
+.hero-left {
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 40%;
+  padding: 5%;
+}
+
+.hero-right {
+  display: flex;
+  width: 40%;
+  /* border: 1px solid red; */
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:800px){
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left {
+    /* border: 1px solid red; */
+    width: 80%;
+
+  }
+
+  .hero-right {
+    width: 80%;
+    /* border: 1px solid red; */
+  }
+}
+
+
+
+.hero-right img {
+  object-fit: cover;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width:800px){
+  .hero-right img {
+    width: 100%;
+  }
+
+}
+
+.hero h1 {
+  color: aliceblue;
+}
+
+section {
+  display: flex;
+  justify-content:space-around;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  padding: 6%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  text-align: center;
+  width: 25%;
+  margin: 2%;
+  /* border: 1px solid yellow; */
+}
+
+.article-photo {
+  width: 50%;
+  margin: 0;
+  /* border: 1px solid red; */
+  margin-left: 25%;
+}
+
+article img {
+  width: 120px;
+  height: auto;
+  position: relative;
+  left: -10px;
+  /* border: 1px solid blue; */
+}
+
+article h1 {
+  margin: 10px;
+}
+
+@media screen and (max-width:800px){
+  article {
+    width: 90%;
+    margin: 10%;
+  }
+}
+
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 6%;
+}
+
+.bottom-section ul il{
+  display: flex;
+  padding: 10px;
+}
+
+.bottom-left {
+  width: 20%;
+  margin: 2%;
+  /* border: 1px solid red; */
+}
+.bottom-right {
+  width: 20%;
+  margin: 2%;
+  /* border: 1px solid red; */
+}
+
+.bottom-left img{
+  width: 150px;
+}
+
+.bottom-left p{
+  padding: 15px;
+}
+
+@media screen and (max-width:800px){
+  .bottom-left {
+    width: 40%;
+    margin: 4%;
+  }
+  .bottom-right {
+    width: 40%;
+    margin: 4%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  background-color: #f8f8f8;
+}
+
+.my-icon {
+  width: 20px;
+  filter: invert(78%) sepia(42%) saturate(2558%) hue-rotate(166deg) brightness(100%) contrast(100%);
+}
