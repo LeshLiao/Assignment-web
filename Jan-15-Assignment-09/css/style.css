@@ -40,10 +40,45 @@ img {
 
 .left-side {
   grid-area: left-side;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
 }
 
 .right-side {
   grid-area: right-side;
+}
+
+/* === Google Font and Font Awesome === */
+
+.text-this-is {
+  color: white;
+  font-size: 1rem;
+}
+
+.text-google-font {
+  position:relative;
+  color: red;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-example {
+  color: white;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.text-font-awesome {
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+.fa-canadian-maple-leaf {
+  color: red;
+  size: 36px;
 }
 
 /* === bottom-parent-container === */
