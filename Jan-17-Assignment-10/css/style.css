@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 10%;
+  background-color: #5b539c;
+  width: 80%;
+}
+
+caption {
+  background-color: #5b539c;
+  padding: 3% 0% 5% 0%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+tbody th:nth-child(even) {
+  padding: 3%;
+  background-color: #1f273a;
+  color: white;
+  font-weight: 300;
+  border-radius: 10px 10px 0 0;
+}
+
+.price-data {
+  background-color: #1f273a;
+  color: white;
+  text-align: center;
+}
+
+strong {
+  font-size: 2rem;
+}
+
+tbody td:nth-child(odd) {
+  width: 18px;
+}
+
+tbody td:nth-child(even) {
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  color: white;
+  background-color: #1f273a;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+ul li::marker {
+  color: red;
+}
+
+li {
+  padding: 10px;
+}
+
+.last-row {
+  background-color: #1f273a;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+tfoot {
+  height: 20px;
+}
+
+button {
+  margin:5%;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid red;
+  background-color: #1f273a;
+  color: white;
+  border-radius: 5px;
+}
+
+.red-button {
+  background-color: #e7224f;
+}
