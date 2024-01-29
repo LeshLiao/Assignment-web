@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Traveling</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <!-- Source: https://picsum.photos/1920/1080 -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://fastly.picsum.photos/id/441/1920/1080.jpg?hmac=mbJfW1MS0-8P7UEkTLBk_qbCe2AK7cJN-iRjsMfsbOQ"
+          class="d-block w-100" alt="test1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://fastly.picsum.photos/id/191/1920/1080.jpg?hmac=QRQYd_5z_hke81Fh3ywcYzfv8z_LrVAzHgb4gt6y0HM"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://fastly.picsum.photos/id/989/1920/1080.jpg?hmac=No2wfvp8gfNS1s4E8DVeBZy_eeBv4Rpa8riLCoH8Tu4"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Title -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 travel-title">
+        <h1>Find your Perfect Vacation</h1>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <!-- https://picsum.photos/200/300 -->
+    <div class="row">
+      <div class="col-sm-12 col-lg-4 one-card">
+        <h1>TO SEE</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="https://fastly.picsum.photos/id/353/200/300.jpg?hmac=dp_gN1fPfq1NcUZmNjRXfOwD3UH0D4B8A-jwvjByOyc"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Asia</h5>
+            <p class="card-text">
+              Asia is a captivating destination for its rich tapestry of diverse cultures, ancient history, and
+              breathtaking landscapes, offering travelers a unique and immersive experience.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4 one-card">
+        <h1>THE</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="https://fastly.picsum.photos/id/678/200/300.jpg?hmac=oO5BaTGKFZ00iWC6GR1arWVrbmu2-XmgYl9ub3C_ug4"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Europe</h5>
+            <p class="card-text">Europe is a treasure trove of architectural wonders, historical landmarks, and diverse
+              cultures, creating a captivating tapestry for travelers to explore.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4 one-card">
+        <h1>WORLD</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="https://fastly.picsum.photos/id/685/200/300.jpg?hmac=0R7Bu0AY8CbakSrvbQHtFb_swiFQbJqQe7bKpbV6viA"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">America</h5>
+            <p class="card-text">America is a diverse and vast continent, providing travelers with a wide range of
+              experiences, from the natural wonders of its national parks to the vibrant cultural scenes of its cities.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="row">
+      <div class="col-sm-12 travel-form">
+        <h1>Login</h1>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="container-fluid modal-container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary modal-button-style" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Buy One Get One Free!!!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-msg">
+            Just kidding
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok Fine</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid button-container">
+    <button type="button" class="btn btn-primary others-button">Primary</button>
+    <button type="button" class="btn btn-secondary others-button">Secondary</button>
+    <button type="button" class="btn btn-success others-button">Success</button>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 p-3 text-end tex-area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+        architecto
+        cupiditate
+        saepe
+        non dolore asperiores iure, nisi dolor laboriosam in at perspiciatis voluptas quasi eos doloremque itaque culpa
+        consectetur sint?</div>
+      <div class="col-6 p-3 tex-area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto
+        cupiditate
+        saepe
+        non dolore asperiores iure, nisi dolor laboriosam in at perspiciatis voluptas quasi eos doloremque itaque culpa
+        consectetur sint?</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
