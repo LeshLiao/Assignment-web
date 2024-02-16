@@ -1,3 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  .theme-a.adaptive {
+    background: #753;
+    color: #dcb;
+    outline: 5px dashed #000;
+  }
+}
+
 
 .twelve {
   background-color: #93BFCF;
@@ -63,3 +71,4 @@ h1 {
 .others-button {
   margin: 2rem;
 }
+

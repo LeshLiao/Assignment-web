@@ -11,6 +11,8 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+
 h1 {
   color: #29417c;
 }
@@ -276,4 +278,37 @@ footer {
 .my-icon {
   width: 20px;
   filter: invert(78%) sepia(42%) saturate(2558%) hue-rotate(166deg) brightness(100%) contrast(100%);
+}
+div.box {
+  display: inline-block;
+  padding: 1em;
+  margin: 6px;
+  outline: 2px solid #000;
+  width: 12em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.theme-a {
+  background: #dca;
+  color: #731;
+}
+@media (prefers-color-scheme: dark) {
+  .theme-a.adaptive {
+    background: #753;
+    color: #dcb;
+    outline: 5px dashed #000;
+  }
+}
+
+.theme-b {
+  background: #447;
+  color: #bbd;
+}
+@media (prefers-color-scheme: light) {
+  .theme-b.adaptive {
+    background: #bcd;
+    color: #334;
+    outline: 5px dotted #000;
+  }
 }
