@@ -1,0 +1,253 @@
+body { background-color: #282828; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; /* Change the text color to white */
+}
+
+.home-link {
+  color:#49e819;
+}
+
+.hero_conainer {
+  /* border: 1px solid red; */
+  height: 500px;
+  background-color: #000;
+}
+
+.hero_button_container {
+  width: 310px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.outer_container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.our_episodes_container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 800px;
+}
+
+.our_episodes_container .title {
+  /* border: 1px solid red; */
+  color: white;
+  width: 300px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 1rem 0 1rem 0;
+}
+
+.our_episodes_container .content {
+  /* border: 1px solid red; */
+  color: white;
+  width: 500px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.custom-card-bg {
+  background-color: #101010; /* Change the background color to black */
+  color: white; /* Change the text color to white */
+}
+
+.card-detail {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+
+.last_form_container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last_form_container .inner_container {
+  background-color: #0c0c0c;
+  width: 900px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.last_form_container .inner_container .left_block {
+  /* border: 1px solid blue; */
+  width: 400px;
+  height: 280px;
+}
+
+.last_form_container .inner_container .left_block .title{
+  color: #ececec;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.last_form_container .inner_container .left_block .detail{
+  color: #b3b3b3;
+  font-size: 0.6rem;
+  margin: 0.7rem;
+}
+
+.last_form_container .inner_container .right_block {
+  /* border: 1px solid green; */
+  width: 400px;
+}
+
+.show_hosts_container {
+  width: 85%;
+}
+
+.travel-title {
+  color: #ececec;
+  margin: 2rem;
+}
+
+.card-body {
+  background: #000;
+}
+
+.card-body .card-title {
+  color: #ececec;
+  text-align: center;
+}
+
+.recod_edit_public_container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recod_edit_public_container .images {
+  width: 300px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(100%);
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.carousel h3 {
+  /* border: 1px solid red; */
+  color: white;
+  width: 500px;
+}
+
+.carousel .description {
+  /* border: 1px solid red; */
+  color: rgb(133, 133, 133);
+  width: 500px;
+  font-size: 0.8rem;
+}
+
+/* Footer */
+.footer_container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 500px;
+  margin-top: 5rem;
+}
+
+.footer_container .inner_container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 250px;
+}
+
+.footer_container .inner_container .top_container {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/footer_img.png");
+  background-position: center;
+  background-size:cover;
+}
+
+.subscribe_container {
+  /* border: 1px solid red; */
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_container h4 {
+  color: #ececec;
+}
+
+.subscribe_container span {
+  color: #ececec;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-custom {
+  background-color: #1cb752;
+  color: #ffffff;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.footer_container .inner_container .bottom_container {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.first_container, .second_container, .third_container, .fourth_container{
+  /* border: 1px solid red; */
+  width: 210px;
+  height: 200px;
+  color: #ececec;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+}
+
+.first_container span {
+  color:#1cb752;
+}
+
+.second_container h5, .third_container h5 , .fourth_container h5{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.second_container span {
+  color:#1cb752
+}
+
+.fourth_container img {
+  width: 100%;
+}
