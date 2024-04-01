@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Contact US</h1>
+  <div class="container">
+
+    Name <input id='name'><br><br>
+    Email <input id='email'><br><br>
+    Phone Number <input id='phone_number'><br><br>
+    <input type="radio" id="radio_home" name="category" value="0" checked onclick="checkRadio()">
+    <label>Home</label><br>
+    <input type="radio" id="radio_company" name="category" value="1" onclick="checkRadio()">
+    <label>Company</label>
+    <div class="company_container">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:
+      <input id='input_company'>
+    </div> <br><br>
+    Content <br><textarea id="content"></textarea><br><br>
+    <div class='submit_msg' id='submit_msg'></div><br><br>
+    <button onclick="submit()">Submit</button>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

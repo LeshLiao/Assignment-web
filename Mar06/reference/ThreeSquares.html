@@ -5,11 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .outer {
+      /* border: 1px solid red; */
+      display: flex;
+    }
+
+    .squre-contaniner {
+      /* border: 1px solid green; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <div id='square-container'></div>
-  <div id='square-msg'></div>
+  <div class="outer">
+    <div id='square-container'></div>
+    <div class="squre-contaniner">
+      <div id='square-msg1'></div>
+      <div id='square-msg2'></div>
+      <div id='square-msg3'></div>
+    </div>
+
+  </div>
   <script src="three_squares.js"></script>
 </body>
 

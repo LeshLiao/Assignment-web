@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    button {
+      width: 100px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <ul>
+    <li><button onclick="showParagraph('p1')">First</button></li>
+    <li><button onclick="showParagraph('p2')">Second</button></li>
+    <li><button onclick="showParagraph('p3')">Third</button></li>
+  </ul>
+
+  <p id="p1">Paragraph1: Good morning</p>
+  <p id="p2">Paragraph2: Good afternoon</p>
+  <p id="p3">Paragraph3: Good night</p>
+
+  <script>
+
+    function showParagraph(paraId) {
+      hideAll();
+      document.getElementById(paraId).style.display = 'block';
+    }
+
+    function hideAll() {
+      $("p").hide();
+      // $("p").css("background-color", "red");
+
+      // document.getElementById('p1').style.display = 'none';
+      // document.getElementById('p2').style.display = 'none';
+      // document.getElementById('p3').style.display = 'none';
+    }
+
+
+
+
+
+
+
+
+  </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

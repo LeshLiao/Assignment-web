@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+  <style>
+    .outer {
+      /* border: 1px solid red; */
+      display: flex;
+      width: 400px;
+      height: 300px;
+    }
+
+    .output-container {
+      /* border: 1px solid green; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+    }
+
+    #game-result {
+      /* border: 1px solid green; */
+      margin: 2rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <hi>Tic Tac Toe</hi>
+  <div class="outer">
+    <div id='square-container'></div>
+    <div id='game-result'></div>
+  </div>
+  <br>
+  <button onclick="clearAll()">Restart</button>
+  <script src="tic_tac_toe.js"></script>
+</body>
+
+</html>

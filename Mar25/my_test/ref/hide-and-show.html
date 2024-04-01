@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" />
+  <title>Document</title>
+
+  <style>
+    div#popup-menu {
+      background-color: #979797;
+      position: absolute;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  hide-and-show<br />
+  header-menu.js<br />
+  <a href="/index.html">Back</a>
+
+  <p>Test page</p>
+  <button id="btn-header">Click Me</button>
+  <div id="popup-menu" class="hidden">
+    <ul>
+      <li><button>button1</button></li>
+      <li><button>button2</button></li>
+      <li><button>button3</button></li>
+    </ul>
+  </div>
+  <div id="my_page">
+    This is my test page.
+  </div>
+  <button id="btn-hide">Hide</button>
+  <button id="btn-reveal">Reveal</button>
+  <button id="btn-hide-click-me">Hide click me</button>
+
+  <br /><br /><br /><br /><br />
+  <button id="btn-hide-all">Hide all button</button>
+
+  <div id="beforeend"></div>
+
+  <script src="header-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  API KEY: <input id='api-key' size="35"><br>
+  LOCATION: <input id='todo-input'>
+  <button id="submit-button">Submit</button><br>
+  <h1>Tomorrow</h1>
+  <h3 id='date'></h3>
+  <h3 id='country'></h3>
+  <h3 id='name'></h3>
+  <h3 id='msg'></h3>
+  <div id='output-container'></div>
+
+  <script>
+    const BASE_URL = "http://api.weatherapi.com/v1"
+    // const MODIFIED_URL = `${BASE_URL}/current.json?key=${API_KEY}&q=M4W 3R4`
+    let outputCon = document.querySelector('#output-container');
+    let apiKey = document.querySelector('#api-key');
+    let inputBox = document.querySelector('#todo-input');
+    let submitBtn = document.querySelector('#submit-button');
+
+    let API_KEY = apiKey.value;
+
+    submitBtn.addEventListener('click', function () {
+      if (!apiKey.value) {
+        alert('API KEY is empty!');
+        return;
+      }
+      updateWeather(apiKey.value, inputBox.value)
+    })
+
+    function updateWeather(key, location) {
+      const NEW_URL = `${BASE_URL}/forecast.json?key=${key}&q=${location}&days=2`
+
+      console.log(NEW_URL);
+
+      fetch(NEW_URL)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+          let { date } = data.forecast.forecastday[1];
+          let { country, name } = data.location;
+          let { text, icon } = data.forecast.forecastday[1].day.condition;
+          document.getElementById('country').textContent = country;
+          document.getElementById('name').textContent = name;
+          document.getElementById('date').textContent = date;
+          let myImg = document.createElement('img');
+          myImg.src = icon;
+          myImg.alt = text;
+          outputCon.textContent = '';
+          outputCon.appendChild(myImg);
+        })
+        .catch(e => {
+          document.getElementById('msg').textContent = e;
+        })
+    }
+
+
+  </script>
+</body>
+
+</html>

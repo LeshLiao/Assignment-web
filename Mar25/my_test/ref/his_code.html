@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="contact.js" defer></script>
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label>Category:</label>
+      <input type="radio" id="home" name="category" value="Home" checked>
+      <label for="home">Home</label>
+      <input type="radio" id="business" name="category" value="Business">
+      <label for="business">Business</label>
+    </div>
+    <div id="companyNameField" style="display: none;">
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" name="companyName">
+    </div>
+    <div>
+      <label for="message">Message Content:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="error" style="color: red;"></p>
+
+  <p id="formData"> </p>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get form values
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let category = document.querySelector('input[name="category"]:checked').value;
+      let companyName = document.getElementById("companyName").value;
+      let message = document.getElementById("message").value;
+
+      // Validate form fields
+      let errorMessage = "";
+      if (name.trim() === "") {
+        errorMessage += "Name is missing. ";
+      }
+      if (email.trim() === "" || !email.includes("@") || !email.includes(".com")) {
+        errorMessage += "Invalid email address. ";
+      }
+      if (phone.trim() === "" || phone.replace(/[^0-9]/g, "").length < 10) {
+        errorMessage += "Invalid phone number. ";
+      }
+      if (category === "Business" && companyName.trim() === "") {
+        errorMessage += "Company Name is required for Business category. ";
+      }
+
+      // Display error message or return form data
+      if (errorMessage !== "") {
+        document.getElementById("error").textContent = errorMessage;
+      } else {
+        document.getElementById("error").textContent = "";
+        let formData = {
+          name: name,
+          email: email,
+          phone: phone,
+          category: category,
+          companyName: companyName,
+          message: message
+        };
+        console.log(formData); // You can replace this with your desired action
+      }
+    });
+
+  </script>
+</body>
+
+</html>
